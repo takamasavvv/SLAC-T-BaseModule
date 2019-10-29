@@ -1,4 +1,1542 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:RCT-Arrows-Telemetry-cache
+EELAYER 30 0
 EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LT1761-5 U2
+U 1 1 5D7BCBAE
+P 3200 1050
+F 0 "U2" H 3200 1417 50  0000 C CNN
+F 1 "LT1761-5" H 3200 1326 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3200 1375 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1761sff.pdf" H 3200 1050 50  0001 C CNN
+F 4 "Digikey" H 3200 1050 50  0001 C CNN "Agency"
+F 5 "LT1761MPS5-5#TRMPBF" H 3200 1050 50  0001 C CNN "MPN"
+	1    3200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L KUTKiCad_symbol:LT1965xDD-3.3 U3
+U 1 1 5D7BDCD4
+P 3200 2000
+F 0 "U3" H 3200 2265 50  0000 C CNN
+F 1 "LT1965xDD-3.3" H 3200 2174 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm" H 3200 2000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1965fb.pdf" H 3200 2000 50  0001 C CNN
+F 4 "Digikey" H 3200 2000 50  0001 C CNN "Agency"
+F 5 "LT1965EDD-3.3#PBF" H 3200 2000 50  0001 C CNN "MPN"
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L KUTKiCad_symbol:NCV7342 U4
+U 1 1 5D7BF920
+P 5750 2550
+F 0 "U4" H 5450 2000 60  0000 C CNN
+F 1 "NCV7342" H 5450 2100 60  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm" H 5750 2550 60  0001 C CNN
+F 3 "https://www.onsemi.jp/PowerSolutions/document/NCV7342-D.PDF" H 5750 2550 60  0001 C CNN
+F 4 "Digikey" H 5750 2550 50  0001 C CNN "Agency"
+F 5 "NCV7342MW3R2G" H 5750 2550 50  0001 C CNN "MPN"
+	1    5750 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5D7C5A4E
+P 6400 10450
+F 0 "Y1" H 6400 10700 50  0000 C CNN
+F 1 "Crystal_MHz" H 6400 10600 50  0000 C CNN
+F 2 "KUTKiCad_footprint:Crystal_Murata_XRCHA" H 6400 10450 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/products/timingdevice/crystalu/flyers/vppt-hcrj078-d.ashx?la=en-us" H 6400 10450 50  0001 C CNN
+F 4 "Digikey" H 6400 10450 50  0001 C CNN "Agency"
+F 5 "XRCHA24M000F0A01R0" H 6400 10450 50  0001 C CNN "MPN"
+	1    6400 10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5D7C674E
+P 5450 8000
+F 0 "R9" V 5400 7750 50  0000 L CNN
+F 1 "1.5kΩ" V 5400 8150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 8000 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 5450 8000 50  0001 C CNN
+F 4 "Digikey" H 5450 8000 50  0001 C CNN "Agency"
+F 5 "ERJ-2GEJ152X" H 5450 8000 50  0001 C CNN "MPN"
+	1    5450 8000
+	0    1    1    0   
+$EndComp
+$Comp
+L KUTKiCad_symbol:KRC_Conn_SWD P1
+U 1 1 5D7CEEA8
+P 1050 8900
+F 0 "P1" H 1100 8450 60  0000 R CNN
+F 1 "KRC_Conn_SWD" H 1350 8550 60  0000 R CNN
+F 2 "KUTKiCad_footprint:JST_JQ_05JQ-BT_1x05_P2.5mm_Vertical" H 725 8900 60  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eJQ.pdf" H 725 8900 60  0001 C CNN
+F 4 "Digikey" H 1050 8900 50  0001 C CNN "Agency"
+F 5 "05JQ-BT" H 1050 8900 50  0001 C CNN "MPN"
+	1    1050 8900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D7CF8D0
+P 3700 10950
+F 0 "#PWR0101" H 3700 10700 50  0001 C CNN
+F 1 "GND" H 3705 10777 50  0000 C CNN
+F 2 "" H 3700 10950 50  0001 C CNN
+F 3 "" H 3700 10950 50  0001 C CNN
+	1    3700 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D7D3F08
+P 700 700
+F 0 "H1" H 800 746 50  0000 L CNN
+F 1 "MountingHole" H 800 655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 700 50  0001 C CNN
+F 3 "~" H 700 700 50  0001 C CNN
+F 4 "Digikey" H 700 700 50  0001 C CNN "Agency"
+F 5 "~" H 700 700 50  0001 C CNN "MPN"
+	1    700  700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1050 2750 1050
+Wire Wire Line
+	2750 1050 2750 950 
+Wire Wire Line
+	2750 950  2800 950 
+Wire Wire Line
+	2300 950  2300 1000
+Wire Wire Line
+	3950 950  3950 1000
+NoConn ~ 3600 1050
+$Comp
+L power:GND #PWR0102
+U 1 1 5D7D6FE9
+P 3200 1400
+F 0 "#PWR0102" H 3200 1150 50  0001 C CNN
+F 1 "GND" H 3205 1227 50  0000 C CNN
+F 2 "" H 3200 1400 50  0001 C CNN
+F 3 "" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D7D80DC
+P 2300 1400
+F 0 "#PWR0103" H 2300 1150 50  0001 C CNN
+F 1 "GND" H 2305 1227 50  0000 C CNN
+F 2 "" H 2300 1400 50  0001 C CNN
+F 3 "" H 2300 1400 50  0001 C CNN
+	1    2300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D7D84F8
+P 3950 1400
+F 0 "#PWR0104" H 3950 1150 50  0001 C CNN
+F 1 "GND" H 3955 1227 50  0000 C CNN
+F 2 "" H 3950 1400 50  0001 C CNN
+F 3 "" H 3950 1400 50  0001 C CNN
+	1    3950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1300 3950 1400
+Wire Wire Line
+	3200 1350 3200 1400
+Wire Wire Line
+	2300 1300 2300 1400
+$Comp
+L Device:C C5
+U 1 1 5D7D9CB8
+P 2300 2200
+F 0 "C5" H 2400 2250 50  0000 L CNN
+F 1 "10uF" H 2400 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 2050 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 2300 2200 50  0001 C CNN
+F 4 "GRM188R61E106MA73D" H 2300 2200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2300 2200 50  0001 C CNN "Agency"
+	1    2300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D7D9CBE
+P 2300 2550
+F 0 "#PWR0105" H 2300 2300 50  0001 C CNN
+F 1 "GND" H 2305 2377 50  0000 C CNN
+F 2 "" H 2300 2550 50  0001 C CNN
+F 3 "" H 2300 2550 50  0001 C CNN
+	1    2300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2000 3950 2050
+Wire Wire Line
+	3700 2000 3750 2000
+$Comp
+L power:GND #PWR0106
+U 1 1 5D7DBB0A
+P 3950 2550
+F 0 "#PWR0106" H 3950 2300 50  0001 C CNN
+F 1 "GND" H 3955 2377 50  0000 C CNN
+F 2 "" H 3950 2550 50  0001 C CNN
+F 3 "" H 3950 2550 50  0001 C CNN
+	1    3950 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2350 2300 2550
+$Comp
+L power:GND #PWR0107
+U 1 1 5D7DC647
+P 3200 2600
+F 0 "#PWR0107" H 3200 2350 50  0001 C CNN
+F 1 "GND" H 3205 2427 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2550 3200 2500
+Wire Wire Line
+	3950 2350 3950 2550
+Wire Wire Line
+	2700 2000 2650 2000
+Wire Wire Line
+	2300 2000 2300 2050
+Wire Wire Line
+	2700 2200 2650 2200
+Wire Wire Line
+	2650 2200 2650 2000
+Wire Wire Line
+	3700 2200 3750 2200
+Wire Wire Line
+	3750 2200 3750 2000
+Connection ~ 3750 2000
+Wire Wire Line
+	3750 2000 3950 2000
+Wire Wire Line
+	3600 950  3950 950 
+$Comp
+L power:GND #PWR0108
+U 1 1 5D7DF8A9
+P 5750 3150
+F 0 "#PWR0108" H 5750 2900 50  0001 C CNN
+F 1 "GND" H 5755 2977 50  0000 C CNN
+F 2 "" H 5750 3150 50  0001 C CNN
+F 3 "" H 5750 3150 50  0001 C CNN
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3100 5750 3050
+$Comp
+L Device:C C11
+U 1 1 5D7E0B8C
+P 5400 1800
+F 0 "C11" V 5550 1750 50  0000 L CNN
+F 1 "0.1uF" V 5250 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5438 1650 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 5400 1800 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 5400 1800 50  0001 C CNN "MPN"
+F 5 "Digikey" H 5400 1800 50  0001 C CNN "Agency"
+	1    5400 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5D7E2891
+P 6200 1800
+F 0 "C14" V 6350 1750 50  0000 L CNN
+F 1 "0.1uF" V 6050 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6238 1650 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 6200 1800 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 6200 1800 50  0001 C CNN "MPN"
+F 5 "Digikey" H 6200 1800 50  0001 C CNN "Agency"
+	1    6200 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5D7E2DD2
+P 5150 1900
+F 0 "#PWR0109" H 5150 1650 50  0001 C CNN
+F 1 "GND" H 5155 1727 50  0000 C CNN
+F 2 "" H 5150 1900 50  0001 C CNN
+F 3 "" H 5150 1900 50  0001 C CNN
+	1    5150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5D7E3290
+P 6450 1900
+F 0 "#PWR0110" H 6450 1650 50  0001 C CNN
+F 1 "GND" H 6455 1727 50  0000 C CNN
+F 2 "" H 6450 1900 50  0001 C CNN
+F 3 "" H 6450 1900 50  0001 C CNN
+	1    6450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1900 6450 1800
+Wire Wire Line
+	6450 1800 6350 1800
+Wire Wire Line
+	5150 1900 5150 1800
+Wire Wire Line
+	5150 1800 5250 1800
+Wire Wire Line
+	5550 1800 5650 1800
+Wire Wire Line
+	5750 1800 5750 2050
+Wire Wire Line
+	5850 2050 5850 1800
+Wire Wire Line
+	5850 1800 5950 1800
+$Comp
+L Device:R R2
+U 1 1 5D7E6D4F
+P 4900 2750
+F 0 "R2" H 4950 2800 50  0000 L CNN
+F 1 "56Ω" H 4950 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4830 2750 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 4900 2750 50  0001 C CNN
+F 4 "Digikey" H 4900 2750 50  0001 C CNN "Agency"
+F 5 "ERJ-2GEJ560X" H 4900 2750 50  0001 C CNN "MPN"
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2500 4900 2550
+Wire Wire Line
+	4900 2900 4900 2950
+Wire Wire Line
+	4900 2150 4900 2200
+$Comp
+L Device:C C6
+U 1 1 5D7E920C
+P 4700 2550
+F 0 "C6" V 4550 2500 50  0000 L CNN
+F 1 "4.7nF" V 4850 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4738 2400 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 4700 2550 50  0001 C CNN
+F 4 "Digikey" H 4700 2550 50  0001 C CNN "Agency"
+F 5 "GRM155R71H472KA01D" H 4700 2550 50  0001 C CNN "MPN"
+	1    4700 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2550 4850 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 2550 4900 2600
+$Comp
+L power:GND #PWR0111
+U 1 1 5D7EA3CD
+P 4500 2600
+F 0 "#PWR0111" H 4500 2350 50  0001 C CNN
+F 1 "GND" H 4505 2427 50  0000 C CNN
+F 2 "" H 4500 2600 50  0001 C CNN
+F 3 "" H 4500 2600 50  0001 C CNN
+	1    4500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2550 4500 2550
+Wire Wire Line
+	4500 2550 4500 2600
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D7F4ED0
+P 700 900
+F 0 "H2" H 800 946 50  0000 L CNN
+F 1 "MountingHole" H 800 855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 900 50  0001 C CNN
+F 3 "~" H 700 900 50  0001 C CNN
+F 4 "Digikey" H 700 900 50  0001 C CNN "Agency"
+F 5 "~" H 700 900 50  0001 C CNN "MPN"
+	1    700  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D7F5198
+P 700 1100
+F 0 "H3" H 800 1146 50  0000 L CNN
+F 1 "MountingHole" H 800 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 1100 50  0001 C CNN
+F 3 "~" H 700 1100 50  0001 C CNN
+F 4 "Digikey" H 700 1100 50  0001 C CNN "Agency"
+F 5 "~" H 700 1100 50  0001 C CNN "MPN"
+	1    700  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D7F536E
+P 700 1300
+F 0 "H4" H 800 1346 50  0000 L CNN
+F 1 "MountingHole" H 800 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 700 1300 50  0001 C CNN
+F 3 "~" H 700 1300 50  0001 C CNN
+F 4 "Digikey" H 700 1300 50  0001 C CNN "Agency"
+F 5 "~" H 700 1300 50  0001 C CNN "MPN"
+	1    700  1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2150 4400 2150
+$Comp
+L KUTKiCad_symbol:KRC_Conn_CAN U1
+U 1 1 5D800E34
+P 1000 2800
+F 0 "U1" H 1142 3215 50  0000 C CNN
+F 1 "KRC_Conn_CAN" H 1142 3124 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal" H 1000 2800 50  0001 C CNN
+F 3 "http://download.siliconexpert.com/pdfs/2014/12/9/8/14/1/458/jst_/manual/29exh.pdf" H 1000 2800 50  0001 C CNN
+F 4 "Digikey" H 1000 2800 50  0001 C CNN "Agency"
+F 5 "S4B-XH-A" H 1000 2800 50  0001 C CNN "MPN"
+	1    1000 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2150 5250 2400
+Wire Wire Line
+	5250 2400 5300 2400
+Wire Wire Line
+	5250 2950 5250 2700
+Wire Wire Line
+	5250 2700 5300 2700
+$Comp
+L power:GND #PWR0112
+U 1 1 5D808CB8
+P 1150 2650
+F 0 "#PWR0112" H 1150 2400 50  0001 C CNN
+F 1 "GND" V 1155 2522 50  0000 R CNN
+F 2 "" H 1150 2650 50  0001 C CNN
+F 3 "" H 1150 2650 50  0001 C CNN
+	1    1150 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 2650 1100 2650
+Wire Wire Line
+	2000 2000 2300 2000
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 5D815C6F
+P 4050 1900
+F 0 "#PWR0113" H 4050 1750 50  0001 C CNN
+F 1 "+3V3" H 4065 2073 50  0000 C CNN
+F 2 "" H 4050 1900 50  0001 C CNN
+F 3 "" H 4050 1900 50  0001 C CNN
+	1    4050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1900 4050 2000
+Wire Wire Line
+	4050 2000 3950 2000
+Connection ~ 3950 2000
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 5D817F3C
+P 5950 1700
+F 0 "#PWR0114" H 5950 1550 50  0001 C CNN
+F 1 "+3V3" H 5965 1873 50  0000 C CNN
+F 2 "" H 5950 1700 50  0001 C CNN
+F 3 "" H 5950 1700 50  0001 C CNN
+	1    5950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1700 5950 1800
+Connection ~ 5950 1800
+Wire Wire Line
+	5950 1800 6050 1800
+$Comp
+L power:+5V #PWR0115
+U 1 1 5D81AC17
+P 5650 1700
+F 0 "#PWR0115" H 5650 1550 50  0001 C CNN
+F 1 "+5V" H 5665 1873 50  0000 C CNN
+F 2 "" H 5650 1700 50  0001 C CNN
+F 3 "" H 5650 1700 50  0001 C CNN
+	1    5650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1700 5650 1800
+Connection ~ 5650 1800
+Wire Wire Line
+	5650 1800 5750 1800
+$Comp
+L power:+5V #PWR0116
+U 1 1 5D81CA03
+P 4050 850
+F 0 "#PWR0116" H 4050 700 50  0001 C CNN
+F 1 "+5V" H 4065 1023 50  0000 C CNN
+F 2 "" H 4050 850 50  0001 C CNN
+F 3 "" H 4050 850 50  0001 C CNN
+	1    4050 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 850  4050 950 
+Wire Wire Line
+	4050 950  3950 950 
+Connection ~ 3950 950 
+$Comp
+L Device:C C12
+U 1 1 5D838E42
+P 3200 6200
+F 0 "C12" H 3315 6246 50  0000 L CNN
+F 1 "0.1uF" H 3315 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3238 6050 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 3200 6200 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 3200 6200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3200 6200 50  0001 C CNN "Agency"
+	1    3200 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5D83AAB3
+P 1400 6450
+F 0 "#PWR0117" H 1400 6200 50  0001 C CNN
+F 1 "GND" H 1405 6277 50  0000 C CNN
+F 2 "" H 1400 6450 50  0001 C CNN
+F 3 "" H 1400 6450 50  0001 C CNN
+	1    1400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7250 2850 7200
+Wire Wire Line
+	2850 7200 2950 7200
+Wire Wire Line
+	3550 7200 3550 7250
+Wire Wire Line
+	2950 7250 2950 7200
+Connection ~ 2950 7200
+Wire Wire Line
+	2950 7200 3050 7200
+Wire Wire Line
+	3050 7250 3050 7200
+Connection ~ 3050 7200
+Wire Wire Line
+	3050 7200 3150 7200
+Wire Wire Line
+	3150 7250 3150 7200
+Connection ~ 3150 7200
+Wire Wire Line
+	3150 7200 3350 7200
+Wire Wire Line
+	3350 7250 3350 7200
+Connection ~ 3350 7200
+Wire Wire Line
+	3350 7200 3550 7200
+$Comp
+L Device:C C18
+U 1 1 5D870329
+P 4650 6900
+F 0 "C18" V 4500 6850 50  0000 L CNN
+F 1 "1uF" V 4800 6850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4688 6750 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E105KA12-01.pdf" H 4650 6900 50  0001 C CNN
+F 4 "GRM155R61E105KA12D" H 4650 6900 50  0001 C CNN "MPN"
+F 5 "Digikey" H 4650 6900 50  0001 C CNN "Agency"
+	1    4650 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 7150 4150 7150
+Wire Wire Line
+	4150 7150 4150 7250
+Wire Wire Line
+	4500 6900 3950 6900
+Wire Wire Line
+	3950 6900 3950 7250
+Wire Wire Line
+	4550 7150 4850 7150
+Wire Wire Line
+	4850 7150 4850 6900
+Wire Wire Line
+	4850 6900 4800 6900
+$Comp
+L power:GND #PWR0118
+U 1 1 5D87B43C
+P 4850 7200
+F 0 "#PWR0118" H 4850 6950 50  0001 C CNN
+F 1 "GND" H 4855 7027 50  0000 C CNN
+F 2 "" H 4850 7200 50  0001 C CNN
+F 3 "" H 4850 7200 50  0001 C CNN
+	1    4850 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 7150 4850 7200
+Connection ~ 4850 7150
+$Comp
+L Device:R R10
+U 1 1 5D8897FA
+P 5450 8200
+F 0 "R10" V 5400 7950 50  0000 L CNN
+F 1 "820Ω" V 5400 8350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 8200 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 5450 8200 50  0001 C CNN
+F 4 "Digikey" H 5450 8200 50  0001 C CNN "Agency"
+F 5 "ERJ-2GEJ821X" H 5450 8200 50  0001 C CNN "MPN"
+	1    5450 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 10850 3700 10900
+Wire Wire Line
+	3700 10900 3550 10900
+Wire Wire Line
+	3550 10900 3550 10850
+Connection ~ 3700 10900
+Wire Wire Line
+	3700 10900 3700 10950
+Wire Wire Line
+	3550 10900 3450 10900
+Wire Wire Line
+	3450 10900 3450 10850
+Connection ~ 3550 10900
+Wire Wire Line
+	3450 10900 3350 10900
+Wire Wire Line
+	3350 10900 3350 10850
+Connection ~ 3450 10900
+Wire Wire Line
+	3350 10900 3100 10900
+Wire Wire Line
+	3100 10900 3100 10850
+Connection ~ 3350 10900
+Wire Wire Line
+	3100 10900 2900 10900
+Wire Wire Line
+	2900 10900 2900 10850
+Connection ~ 3100 10900
+Wire Wire Line
+	2900 10900 2700 10900
+Wire Wire Line
+	2700 10900 2700 10850
+Connection ~ 2900 10900
+$Comp
+L power:GND #PWR0119
+U 1 1 5D8CD1E8
+P 5750 10950
+F 0 "#PWR0119" H 5750 10700 50  0001 C CNN
+F 1 "GND" H 5755 10777 50  0000 C CNN
+F 2 "" H 5750 10950 50  0001 C CNN
+F 3 "" H 5750 10950 50  0001 C CNN
+	1    5750 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5D8E0E09
+P 5750 10500
+F 0 "J1" H 5800 10850 50  0000 R CNN
+F 1 "USB_B_Micro" H 6350 10150 50  0000 R CNN
+F 2 "KUTKiCad_footprint:Hirose_ZX_ZX62D-B-5P8" H 5900 10450 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0242-0056-3-30&productname=ZX62D-B-5PA8(30)&series=ZX&documenttype=Catalog&lang=en&documentid=D31704_en" H 5900 10450 50  0001 C CNN
+F 4 "Digikey" H 5750 10500 50  0001 C CNN "Agency"
+F 5 "ZX62D-B-5P8(30)" H 5750 10500 50  0001 C CNN "MPN"
+	1    5750 10500
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 5450 10700
+NoConn ~ 5450 10300
+NoConn ~ 5850 10900
+Wire Wire Line
+	5750 10900 5750 10950
+$Comp
+L power:GND #PWR0120
+U 1 1 5D9979D7
+P 6650 10950
+F 0 "#PWR0120" H 6650 10700 50  0001 C CNN
+F 1 "GND" H 6655 10777 50  0000 C CNN
+F 2 "" H 6650 10950 50  0001 C CNN
+F 3 "" H 6650 10950 50  0001 C CNN
+	1    6650 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 5D9C5956
+P 3550 5900
+F 0 "#PWR0121" H 3550 5750 50  0001 C CNN
+F 1 "+3V3" H 3565 6073 50  0000 C CNN
+F 2 "" H 3550 5900 50  0001 C CNN
+F 3 "" H 3550 5900 50  0001 C CNN
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5DAC625F
+P 1200 9000
+F 0 "#PWR0122" H 1200 8750 50  0001 C CNN
+F 1 "GND" V 1205 8872 50  0000 R CNN
+F 2 "" H 1200 9000 50  0001 C CNN
+F 3 "" H 1200 9000 50  0001 C CNN
+	1    1200 9000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 9000 1150 9000
+NoConn ~ 1150 9100
+$Comp
+L power:+3V3 #PWR0123
+U 1 1 5DB01137
+P 6250 8100
+F 0 "#PWR0123" H 6250 7950 50  0001 C CNN
+F 1 "+3V3" H 6265 8273 50  0000 C CNN
+F 2 "" H 6250 8100 50  0001 C CNN
+F 3 "" H 6250 8100 50  0001 C CNN
+	1    6250 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 10500 4900 10500
+Wire Wire Line
+	4700 10600 4900 10600
+Text Label 6650 2400 2    50   ~ 0
+CAN-STB
+Text Label 6650 2600 2    50   ~ 0
+CAN-TXD
+Text Label 6650 2700 2    50   ~ 0
+CAN-RXD
+Wire Wire Line
+	6650 2700 6200 2700
+Wire Wire Line
+	6650 2600 6200 2600
+Wire Wire Line
+	6650 2400 6200 2400
+NoConn ~ 2000 9500
+NoConn ~ 2000 9600
+NoConn ~ 4700 9400
+NoConn ~ 4700 9300
+NoConn ~ 4700 9100
+NoConn ~ 4700 8800
+NoConn ~ 4700 8700
+NoConn ~ 4700 8500
+NoConn ~ 4700 8400
+NoConn ~ 4700 8000
+NoConn ~ 4700 7900
+NoConn ~ 4700 7800
+Text Label 1500 9300 0    50   ~ 0
+Flash-MISO
+Text Label 1500 9200 0    50   ~ 0
+Flash-MOSI
+Text Label 1500 9100 0    50   ~ 0
+Flash-SCLK
+Text Label 1500 9400 0    50   ~ 0
+Flash-~CS
+Text Label 1400 10350 0    50   ~ 0
+CAN-STB
+Text Label 1400 10450 0    50   ~ 0
+CAN-TXD
+Text Label 1400 10550 0    50   ~ 0
+CAN-RXD
+Wire Wire Line
+	2000 10350 1400 10350
+Wire Wire Line
+	2000 10450 1400 10450
+Wire Wire Line
+	2000 10550 1400 10550
+Wire Wire Line
+	1150 8700 2000 8700
+Wire Wire Line
+	1150 8800 2000 8800
+Wire Wire Line
+	1150 8900 2000 8900
+$Comp
+L KUTKiCad_symbol:CY8C58xxLTI-LPxxx U5
+U 1 1 5D7C03B0
+P 3350 9200
+F 0 "U5" H 3350 9300 60  0000 C CNN
+F 1 "CY8C58xxLTI-LPxxx" H 3350 9150 60  0000 C CNN
+F 2 "KUTKiCad_footprint:Cypress_QFN-68_EP_8x8_Pitch0.4mm" H 3350 9200 60  0001 C CNN
+F 3 "https://www.cypress.com/file/45906/download" H 3350 9200 60  0001 C CNN
+F 4 "Digikey" H 3350 9200 50  0001 C CNN "Agency"
+F 5 "CY8C5868LTI-LP039" H 3350 9200 50  0001 C CNN "MPN"
+	1    3350 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 9300 1500 9300
+Wire Wire Line
+	2000 9200 1500 9200
+Wire Wire Line
+	2000 9100 1500 9100
+Wire Wire Line
+	2000 9400 1500 9400
+Wire Wire Line
+	5200 10500 5450 10500
+Wire Wire Line
+	5200 10600 5450 10600
+$Comp
+L Device:C C19
+U 1 1 5ED4CD79
+P 6150 10700
+F 0 "C19" H 6300 10750 50  0000 L CNN
+F 1 "9pF" H 6300 10650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6188 10550 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1E9R0CA01-01.pdf" H 6150 10700 50  0001 C CNN
+F 4 "GRM0335C1E9R0CA01D" H 6150 10700 50  0001 C CNN "MPN"
+F 5 "Digikey" H 6150 10700 50  0001 C CNN "Agency"
+	1    6150 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5ED4CF61
+P 6650 10700
+F 0 "C20" H 6800 10750 50  0000 L CNN
+F 1 "9pF" H 6800 10650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6688 10550 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM0335C1E9R0CA01-01.pdf" H 6650 10700 50  0001 C CNN
+F 4 "GRM0335C1E9R0CA01D" H 6650 10700 50  0001 C CNN "MPN"
+F 5 "Digikey" H 6650 10700 50  0001 C CNN "Agency"
+	1    6650 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5ED7087E
+P 4900 2350
+F 0 "R1" H 4950 2400 50  0000 L CNN
+F 1 "56Ω" H 4950 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4830 2350 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 4900 2350 50  0001 C CNN
+F 4 "Digikey" H 4900 2350 50  0001 C CNN "Agency"
+F 5 "ERJ-2GEJ560X" H 4900 2350 50  0001 C CNN "MPN"
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2150 5250 2150
+Connection ~ 4900 2150
+Wire Wire Line
+	4900 2950 5250 2950
+Connection ~ 4900 2950
+$Comp
+L Device:R R3
+U 1 1 5F49F1B1
+P 5050 10500
+F 0 "R3" V 5000 10250 50  0000 L CNN
+F 1 "22Ω" V 5000 10650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4980 10500 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 5050 10500 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 5050 10500 50  0001 C CNN "MPN"
+F 5 "Digikey" H 5050 10500 50  0001 C CNN "Agency"
+	1    5050 10500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F49F1B7
+P 5050 10600
+F 0 "R4" V 5100 10400 50  0000 C CNN
+F 1 "22Ω" V 5100 10750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4980 10600 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 5050 10600 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 5050 10600 50  0001 C CNN "MPN"
+F 5 "Digikey" H 5050 10600 50  0001 C CNN "Agency"
+	1    5050 10600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F4B8181
+P 2300 1150
+F 0 "C4" H 2400 1200 50  0000 L CNN
+F 1 "10uF" H 2400 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 1000 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 2300 1150 50  0001 C CNN
+F 4 "GRM188R61E106MA73D" H 2300 1150 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2300 1150 50  0001 C CNN "Agency"
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5F4B849D
+P 3950 1150
+F 0 "C15" H 4050 1200 50  0000 L CNN
+F 1 "10uF" H 4050 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1000 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 3950 1150 50  0001 C CNN
+F 4 "GRM188R61E106MA73D" H 3950 1150 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3950 1150 50  0001 C CNN "Agency"
+	1    3950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5F4B8AC1
+P 3950 2200
+F 0 "C16" H 4050 2250 50  0000 L CNN
+F 1 "10uF" H 4050 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 2050 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us" H 3950 2200 50  0001 C CNN
+F 4 "GRM188R61E106MA73D" H 3950 2200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3950 2200 50  0001 C CNN "Agency"
+	1    3950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2000 2300 2000
+Connection ~ 2650 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2750 950  2300 950 
+Connection ~ 2750 950 
+Connection ~ 2300 950 
+$Comp
+L Device:C C9
+U 1 1 5F5083E0
+P 2750 6200
+F 0 "C9" H 2865 6246 50  0000 L CNN
+F 1 "0.1uF" H 2865 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2788 6050 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 2750 6200 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 2750 6200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2750 6200 50  0001 C CNN "Agency"
+	1    2750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5F50878E
+P 2300 6200
+F 0 "C7" H 2415 6246 50  0000 L CNN
+F 1 "0.1uF" H 2415 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2338 6050 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 2300 6200 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 2300 6200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2300 6200 50  0001 C CNN "Agency"
+	1    2300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F508A3A
+P 1850 6200
+F 0 "C2" H 1965 6246 50  0000 L CNN
+F 1 "0.1uF" H 1965 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1888 6050 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 1850 6200 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 1850 6200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 1850 6200 50  0001 C CNN "Agency"
+	1    1850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F508D2B
+P 1400 6200
+F 0 "C1" H 1515 6246 50  0000 L CNN
+F 1 "0.1uF" H 1515 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1438 6050 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 1400 6200 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 1400 6200 50  0001 C CNN "MPN"
+F 5 "Digikey" H 1400 6200 50  0001 C CNN "Agency"
+	1    1400 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6350 1400 6400
+Wire Wire Line
+	1400 6400 1850 6400
+Wire Wire Line
+	1850 6400 1850 6350
+Connection ~ 1400 6400
+Wire Wire Line
+	1400 6400 1400 6450
+Wire Wire Line
+	1850 6400 2300 6400
+Wire Wire Line
+	2300 6400 2300 6350
+Connection ~ 1850 6400
+Wire Wire Line
+	2300 6400 2750 6400
+Wire Wire Line
+	2750 6400 2750 6350
+Connection ~ 2300 6400
+Wire Wire Line
+	2750 6400 3200 6400
+Wire Wire Line
+	3200 6400 3200 6350
+Connection ~ 2750 6400
+Wire Wire Line
+	1400 6050 1400 6000
+Wire Wire Line
+	1400 6000 1850 6000
+Wire Wire Line
+	1850 6050 1850 6000
+Connection ~ 1850 6000
+Wire Wire Line
+	1850 6000 2300 6000
+Wire Wire Line
+	2300 6050 2300 6000
+Connection ~ 2300 6000
+Wire Wire Line
+	2300 6000 2750 6000
+Wire Wire Line
+	2750 6050 2750 6000
+Connection ~ 2750 6000
+Wire Wire Line
+	2750 6000 3200 6000
+Wire Wire Line
+	3200 6050 3200 6000
+Connection ~ 3200 6000
+Wire Wire Line
+	3200 6000 3550 6000
+Connection ~ 3200 6700
+Wire Wire Line
+	3200 6700 3550 6700
+Connection ~ 2750 6700
+Wire Wire Line
+	3200 6700 3200 6750
+Wire Wire Line
+	2750 6700 3200 6700
+Connection ~ 2300 6700
+Wire Wire Line
+	2750 6700 2750 6750
+Wire Wire Line
+	2300 6700 2750 6700
+Wire Wire Line
+	2300 6700 2300 6750
+Wire Wire Line
+	1850 6700 2300 6700
+Wire Wire Line
+	1850 6750 1850 6700
+Connection ~ 2750 7100
+Wire Wire Line
+	3200 7100 3200 7050
+Wire Wire Line
+	2750 7100 3200 7100
+Connection ~ 2300 7100
+Wire Wire Line
+	2750 7100 2750 7050
+Wire Wire Line
+	2300 7100 2750 7100
+Wire Wire Line
+	1850 7100 1850 7150
+Connection ~ 1850 7100
+Wire Wire Line
+	2300 7100 2300 7050
+Wire Wire Line
+	1850 7100 2300 7100
+Wire Wire Line
+	1850 7050 1850 7100
+$Comp
+L Device:C C13
+U 1 1 5F60253C
+P 3200 6900
+F 0 "C13" H 3315 6946 50  0000 L CNN
+F 1 "1uF" H 3315 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3238 6750 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E105KA12-01.pdf" H 3200 6900 50  0001 C CNN
+F 4 "GRM155R61E105KA12D" H 3200 6900 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3200 6900 50  0001 C CNN "Agency"
+	1    3200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5F60210C
+P 2750 6900
+F 0 "C10" H 2865 6946 50  0000 L CNN
+F 1 "1uF" H 2865 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2788 6750 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E105KA12-01.pdf" H 2750 6900 50  0001 C CNN
+F 4 "GRM155R61E105KA12D" H 2750 6900 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2750 6900 50  0001 C CNN "Agency"
+	1    2750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5F601C80
+P 2300 6900
+F 0 "C8" H 2415 6946 50  0000 L CNN
+F 1 "0.1uF" H 2415 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2338 6750 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 2300 6900 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 2300 6900 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2300 6900 50  0001 C CNN "Agency"
+	1    2300 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F6017AA
+P 1850 6900
+F 0 "C3" H 1965 6946 50  0000 L CNN
+F 1 "0.1uF" H 1965 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1888 6750 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 1850 6900 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 1850 6900 50  0001 C CNN "MPN"
+F 5 "Digikey" H 1850 6900 50  0001 C CNN "Agency"
+	1    1850 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5D83BAEB
+P 1850 7150
+F 0 "#PWR0124" H 1850 6900 50  0001 C CNN
+F 1 "GND" H 1855 6977 50  0000 C CNN
+F 2 "" H 1850 7150 50  0001 C CNN
+F 3 "" H 1850 7150 50  0001 C CNN
+	1    1850 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5F72C3F7
+P 4400 7150
+F 0 "C17" V 4250 7100 50  0000 L CNN
+F 1 "1uF" V 4550 7100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 7000 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E105KA12-01.pdf" H 4400 7150 50  0001 C CNN
+F 4 "GRM155R61E105KA12D" H 4400 7150 50  0001 C CNN "MPN"
+F 5 "Digikey" H 4400 7150 50  0001 C CNN "Agency"
+	1    4400 7150
+	0    1    1    0   
+$EndComp
+NoConn ~ 2000 9850
+NoConn ~ 2000 9950
+NoConn ~ 2000 8400
+NoConn ~ 2000 8500
+NoConn ~ 2000 10250
+NoConn ~ 4700 8900
+NoConn ~ 4700 9000
+NoConn ~ 4700 10200
+NoConn ~ 4700 10300
+Wire Wire Line
+	5850 3050 5850 3100
+Wire Wire Line
+	5850 3100 5750 3100
+Wire Wire Line
+	5750 3150 5750 3100
+Connection ~ 5750 3100
+Wire Wire Line
+	3200 2550 3100 2550
+Wire Wire Line
+	3100 2550 3100 2500
+Wire Wire Line
+	3200 2550 3200 2600
+Connection ~ 3200 2550
+$Comp
+L Device:LED_RGBA D1
+U 1 1 5DA11807
+P 5950 8200
+F 0 "D1" H 5950 8697 50  0000 C CNN
+F 1 "LED_RGBA" H 5950 8606 50  0000 C CNN
+F 2 "KUTKiCad_footprint:LED_LiteOn_LTST-C19HE1WT" H 5950 8150 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2008-0044/LTST-C19HE1WT.pdf" H 5950 8150 50  0001 C CNN
+F 4 "Digikey" H 5950 8200 50  0001 C CNN "Agency"
+F 5 "LTST-C19HE1WT" H 5950 8200 50  0001 C CNN "MPN"
+	1    5950 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5DA15077
+P 5450 8400
+F 0 "R11" V 5400 8150 50  0000 L CNN
+F 1 "820Ω" V 5400 8550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5380 8400 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 5450 8400 50  0001 C CNN
+F 4 "Digikey" H 5450 8400 50  0001 C CNN "Agency"
+F 5 "ERJ-2GEJ821X" H 5450 8400 50  0001 C CNN "MPN"
+	1    5450 8400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 8200 4700 8200
+Wire Wire Line
+	5150 8100 5150 8000
+Wire Wire Line
+	5150 8000 5300 8000
+Wire Wire Line
+	5300 8400 5150 8400
+Wire Wire Line
+	5150 8400 5150 8300
+Wire Wire Line
+	5150 8300 4700 8300
+Wire Wire Line
+	4700 8100 5150 8100
+Wire Wire Line
+	5750 8000 5600 8000
+Wire Wire Line
+	5600 8200 5750 8200
+Wire Wire Line
+	5750 8400 5600 8400
+Wire Wire Line
+	6250 8100 6250 8200
+Wire Wire Line
+	6250 8200 6150 8200
+NoConn ~ 4700 9900
+NoConn ~ 4700 10000
+$Comp
+L Device:Polyfuse F1
+U 1 1 5DA365FE
+P 1750 950
+F 0 "F1" V 1550 900 50  0000 L CNN
+F 1 "Polyfuse" V 1650 800 50  0000 L CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 1800 750 50  0001 L CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/mffsmf.pdf" H 1750 950 50  0001 C CNN
+F 4 "MF-FSMF035X-2" H 1750 950 50  0001 C CNN "MPN"
+F 5 "Digikey" H 1750 950 50  0001 C CNN "Agency"
+	1    1750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 5150 1900 5150
+Wire Wire Line
+	1800 5100 1800 5150
+$Comp
+L Device:C C21
+U 1 1 5F72C75D
+P 1500 4600
+F 0 "C21" H 1615 4646 50  0000 L CNN
+F 1 "0.1uF" H 1615 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1538 4450 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R62A104KE14-01.pdf" H 1500 4600 50  0001 C CNN
+F 4 "GRM155R71H104KE14J" H 1500 4600 50  0001 C CNN "MPN"
+F 5 "Digikey" H 1500 4600 50  0001 C CNN "Agency"
+	1    1500 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5F3EB07E
+P 3850 4600
+F 0 "R8" V 3800 4350 50  0000 L CNN
+F 1 "22Ω" V 3800 4750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 4600 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3850 4600 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 3850 4600 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3850 4600 50  0001 C CNN "Agency"
+	1    3850 4600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F3EAE19
+P 3850 4500
+F 0 "R7" V 3800 4250 50  0000 L CNN
+F 1 "22Ω" V 3800 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 4500 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3850 4500 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 3850 4500 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3850 4500 50  0001 C CNN "Agency"
+	1    3850 4500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F3EAB38
+P 3850 4400
+F 0 "R6" V 3800 4150 50  0000 L CNN
+F 1 "22Ω" V 3800 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 4400 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3850 4400 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 3850 4400 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3850 4400 50  0001 C CNN "Agency"
+	1    3850 4400
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F3E9741
+P 3850 4300
+F 0 "R5" V 3800 4050 50  0000 L CNN
+F 1 "22Ω" V 3800 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3780 4300 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3850 4300 50  0001 C CNN
+F 4 "ERJ-2GEJ220X" H 3850 4300 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3850 4300 50  0001 C CNN "Agency"
+	1    3850 4300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4650 4600 4000 4600
+Wire Wire Line
+	4650 4500 4000 4500
+Wire Wire Line
+	4650 4400 4000 4400
+Wire Wire Line
+	4650 4300 4000 4300
+Text Label 4650 4600 2    50   ~ 0
+Flash-~CS
+Text Label 4650 4500 2    50   ~ 0
+Flash-SCLK
+Text Label 4650 4400 2    50   ~ 0
+Flash-MOSI
+Text Label 4650 4300 2    50   ~ 0
+Flash-MISO
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 5DCFF7B5
+P 3500 3700
+F 0 "#PWR0125" H 3500 3550 50  0001 C CNN
+F 1 "+3V3" H 3515 3873 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5150 1500 5250
+Wire Wire Line
+	1500 4050 1500 3950
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 5DA1D6C3
+P 1500 3950
+F 0 "#PWR0126" H 1500 3800 50  0001 C CNN
+F 1 "+3V3" H 1515 4123 50  0000 C CNN
+F 2 "" H 1500 3950 50  0001 C CNN
+F 3 "" H 1500 3950 50  0001 C CNN
+	1    1500 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5DA1C35B
+P 1500 5250
+F 0 "#PWR0127" H 1500 5000 50  0001 C CNN
+F 1 "GND" H 1505 5077 50  0000 C CNN
+F 2 "" H 1500 5250 50  0001 C CNN
+F 3 "" H 1500 5250 50  0001 C CNN
+	1    1500 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4050 1900 4100
+Wire Wire Line
+	1500 4050 1900 4050
+Connection ~ 1500 4050
+Wire Wire Line
+	1500 4450 1500 4050
+Wire Wire Line
+	1900 5150 1900 5100
+Connection ~ 1800 5150
+Wire Wire Line
+	1500 5150 1800 5150
+Connection ~ 1500 5150
+Wire Wire Line
+	1500 4750 1500 5150
+$Comp
+L KUTKiCad_symbol:W25N01GVxxIG-IT U6
+U 1 1 5D7D23D1
+P 2000 4600
+F 0 "U6" H 1800 4150 60  0000 L CNN
+F 1 "W25N01GVxxIG-IT" H 1100 4050 60  0000 L CNN
+F 2 "KUTKiCad_footprint:WSON-8_8x6mm_P1.27mm" H 2550 5200 60  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25n01gv%20revl%20050918%20unsecured.pdf" H 2550 5200 60  0001 C CNN
+F 4 "Digikey" H 2000 4600 50  0001 C CNN "Agency"
+F 5 "W25N01GVZEIG TR" H 2000 4600 50  0001 C CNN "MPN"
+	1    2000 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 950  2000 950 
+Wire Wire Line
+	2000 950  2000 2000
+Connection ~ 2000 950 
+Wire Wire Line
+	2000 950  2300 950 
+Connection ~ 3550 7200
+NoConn ~ 4700 9200
+Wire Wire Line
+	6650 10450 6550 10450
+Connection ~ 6650 10450
+Wire Wire Line
+	6650 10450 6650 10550
+Wire Wire Line
+	6150 10950 6150 10850
+Wire Wire Line
+	6650 10950 6650 10850
+NoConn ~ 2000 10050
+NoConn ~ 2000 10150
+NoConn ~ 2000 7800
+NoConn ~ 2000 7900
+NoConn ~ 2000 8000
+NoConn ~ 2000 8100
+NoConn ~ 2000 8200
+NoConn ~ 2000 8300
+$Comp
+L power:GND #PWR0128
+U 1 1 5DF35AFF
+P 6150 10950
+F 0 "#PWR0128" H 6150 10700 50  0001 C CNN
+F 1 "GND" H 6155 10777 50  0000 C CNN
+F 2 "" H 6150 10950 50  0001 C CNN
+F 3 "" H 6150 10950 50  0001 C CNN
+	1    6150 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 10450 6150 10450
+Wire Wire Line
+	6150 10450 6150 10550
+Connection ~ 6150 10450
+Wire Wire Line
+	6150 9700 4700 9700
+Wire Wire Line
+	6150 9700 6150 10450
+Wire Wire Line
+	4700 9600 6650 9600
+Wire Wire Line
+	6650 9600 6650 10450
+$Comp
+L Device:R R12
+U 1 1 5D9D19F7
+P 3500 4050
+F 0 "R12" H 3550 4100 50  0000 L CNN
+F 1 "4.7kΩ" H 3550 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4050 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3500 4050 50  0001 C CNN
+F 4 "ERJ-2GEJ472X" H 3500 4050 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3500 4050 50  0001 C CNN "Agency"
+	1    3500 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5F1F6E17
+P 3150 4050
+F 0 "R13" H 3200 4100 50  0000 L CNN
+F 1 "4.7kΩ" H 3200 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3080 4050 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 3150 4050 50  0001 C CNN
+F 4 "ERJ-2GEJ472X" H 3150 4050 50  0001 C CNN "MPN"
+F 5 "Digikey" H 3150 4050 50  0001 C CNN "Agency"
+	1    3150 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5F210432
+P 2800 4050
+F 0 "R14" H 2850 4100 50  0000 L CNN
+F 1 "4.7kΩ" H 2850 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2730 4050 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 2800 4050 50  0001 C CNN
+F 4 "ERJ-2GEJ472X" H 2800 4050 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2800 4050 50  0001 C CNN "Agency"
+	1    2800 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5F2106B4
+P 2450 4050
+F 0 "R15" H 2500 4100 50  0000 L CNN
+F 1 "4.7kΩ" H 2500 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2380 4050 50  0001 C CNN
+F 3 "https://b2b-api.panasonic.eu/file_stream/pids/fileversion/1242" H 2450 4050 50  0001 C CNN
+F 4 "ERJ-2GEJ472X" H 2450 4050 50  0001 C CNN "MPN"
+F 5 "Digikey" H 2450 4050 50  0001 C CNN "Agency"
+	1    2450 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4300 2450 4300
+Wire Wire Line
+	2450 4200 2450 4300
+Wire Wire Line
+	2350 4600 2800 4600
+Wire Wire Line
+	2800 4200 2800 4600
+Wire Wire Line
+	3150 4200 3150 4800
+Wire Wire Line
+	3150 4800 2350 4800
+Wire Wire Line
+	3500 4200 3500 4900
+Wire Wire Line
+	3500 4900 2350 4900
+Wire Wire Line
+	3700 4300 2450 4300
+Connection ~ 2450 4300
+Wire Wire Line
+	2350 4400 3700 4400
+Wire Wire Line
+	2350 4500 3700 4500
+Wire Wire Line
+	3700 4600 2800 4600
+Connection ~ 2800 4600
+Wire Wire Line
+	3500 3900 3500 3800
+Wire Wire Line
+	3500 3800 3150 3800
+Wire Wire Line
+	3150 3800 3150 3900
+Wire Wire Line
+	3150 3800 2800 3800
+Wire Wire Line
+	2800 3800 2800 3900
+Connection ~ 3150 3800
+Wire Wire Line
+	2800 3800 2450 3800
+Wire Wire Line
+	2450 3800 2450 3900
+Connection ~ 2800 3800
+Wire Wire Line
+	3500 3700 3500 3800
+Connection ~ 3500 3800
+Wire Wire Line
+	1100 2750 1500 2750
+Wire Wire Line
+	1500 2750 1500 950 
+Wire Wire Line
+	1500 950  1600 950 
+Wire Wire Line
+	1100 2850 4400 2850
+Wire Wire Line
+	3550 6000 3550 6700
+Connection ~ 3550 6700
+Wire Wire Line
+	3550 6700 3550 7200
+Wire Wire Line
+	3550 5900 3550 6000
+Connection ~ 3550 6000
+Wire Wire Line
+	1100 2950 4900 2950
+Wire Wire Line
+	4400 2150 4400 2850
 $EndSCHEMATC
